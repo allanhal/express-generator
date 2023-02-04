@@ -1,0 +1,27 @@
+[
+  {
+    "categoria": "tenis",
+    "titulo": "nike",
+    "descricao": "calcados",
+    "preço": "100,00",
+    "desconto": "50",
+    "img": "1"
+  },
+  {
+    "categoria": "tenis",
+    "titulo": "ardidas",
+    "descricao": "calcados",
+    "preço": "100,00",
+    "desconto": "50",
+    "img": "2"
+  },
+  {
+    "categoria": "tenis",
+    "titulo": "missuno",
+    "descricao": "calcados",
+    "preço": "100,00",
+    "desconto": "50",
+    "img": "3"
+  }
+]
+
