@@ -4,7 +4,7 @@ var logger = require("morgan"); // lib lib log (coloca no console o que esta aco
 
 
 
-var filterRouter = require("./routes/filter");
+var produtosRouter = require("./routes/produtos");
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 
@@ -16,7 +16,10 @@ app.use(express.urlencoded({ extended: false }));
 
 // Rotas - Modificar para adicionar rotas
 app.use("/", indexRouter);
-app.use("/busca", filterRouter);
+// /produtos/ - lista todos os produtos
+// /produtos/busca?q=chuchu - busca produto pelo titulo
+// /produtos/novo?titulo=chuchu - cria novo produto com titulo
+app.use("/produtos", produtosRouter);
 app.use("/users", usersRouter);
 
 // catch 404 and forward to error handler
